@@ -166,7 +166,7 @@ The application protects against:
 * Insurance bet tracking
 * `Bank` interface redesign to include split classes
 * Session history logging with CSV and text file export
-* Better implimentation of OOP 
+* Better implementation of OOP 
 
 ### ⚠️ Major Upcoming Update
 
