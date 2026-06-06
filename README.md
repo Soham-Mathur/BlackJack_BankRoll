@@ -162,10 +162,11 @@ The application protects against:
 
 ### Planned Features
 
-* Four-way and five-way split support
+* Multiple split support
 * Insurance bet tracking
 * `Bank` interface redesign to include split classes
 * Session history logging with CSV and text file export
+* Better implimentation of OOP 
 
 ### ⚠️ Major Upcoming Update
 
