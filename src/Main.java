@@ -20,6 +20,12 @@ public class Main {
         double totalWin =0;
         double total = 0;
 
+//WELCOME
+        System.out.println("""
+                |*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*|
+                |*Welcome to Black Jack Bankroll!*|
+                |*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*|
+                """);
 //ENTER STARTING BALANCE
         System.out.print("Please enter your starting balance: ");
         while (true) {
@@ -217,7 +223,7 @@ public class Main {
                         break;
                     } else {
                         System.out.print("\nDo you want to play again(y/n): ");
-                        playAgain = scanner.nextLine();
+                        playAgain = scanner.nextLine().trim();
 
                         if (!playAgain.equalsIgnoreCase("y") && !playAgain.equalsIgnoreCase("n")) {
                             System.out.println("**Please enter a Valid Input!!**");
@@ -237,7 +243,7 @@ public class Main {
         if (total > 0) {
             System.out.printf("Your final balance comes out to %,.2f$", finalBalance);
             System.out.println("\nYour Session Breakdown comes out to.....");
-            //1
+        //1
             Thread.sleep(550);
             System.out.print(".");
             Thread.sleep(500);
@@ -246,14 +252,14 @@ public class Main {
             System.out.print(".");
             Thread.sleep(500);
             System.out.print(".");
-            //2
+        //2
             Thread.sleep(550);
             System.out.print("\n.");
             Thread.sleep(500);
             System.out.print(".");
             Thread.sleep(500);
             System.out.print(".");
-            //3
+        //3
             Thread.sleep(550);
             System.out.print("\n.");
             Thread.sleep(550);
