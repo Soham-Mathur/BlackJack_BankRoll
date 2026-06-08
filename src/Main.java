@@ -26,6 +26,7 @@ public class Main {
 
             if (scanner.hasNextDouble()) {
                 startingBalance = scanner.nextDouble();
+                scanner.nextLine();     //Eats up Input Errors
 
                 if (startingBalance > 0 && startingBalance <= 2100000000) {
                     break;      // valid input, exit loop
@@ -60,6 +61,7 @@ public class Main {
 
                 if (scanner.hasNextDouble()) {
                     bet = scanner.nextDouble();
+                    scanner.nextLine();     //Eats up Input Errors
 
                     if (bet <= finalBalance && bet > 0) {
                         break;      // valid input, exit loop
@@ -233,8 +235,8 @@ public class Main {
 
 //FINAL PROFIT/LOSE & WIN%
         if (total > 0) {
-            System.out.printf("\nYour final balance comes out to %,.2f$", finalBalance);
-            System.out.println("\nAnd your profit was.....");
+            System.out.printf("Your final balance comes out to %,.2f$", finalBalance);
+            System.out.println("\nYour Session Breakdown comes out to.....");
             //1
             Thread.sleep(550);
             System.out.print(".");
@@ -264,7 +266,7 @@ public class Main {
             double percentage = (totalWin / total) * 100;
             System.out.printf("\nAnd your win percentage was... %.2f%%", percentage);
             System.out.println("\n**********************************************************");
-            System.out.print("\nThank you for using BlackJack_BankRoll!! :)");
+            System.out.print("\nTHANK YOU for using BlackJack_BankRoll!! :)");
         }else{
             System.out.print("Thank you for using BlackJack_BankRoll!! :)");
         }
